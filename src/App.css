@@ -36,9 +36,30 @@
 text-decoration: underline;
   color: green;
   font-size: 58px;
+  margin-right: 20px;
 }
 .span2{
-  text-decoration: line-through;
+/*  text-decoration: line-through;*/
+  color: red;
+  font-size: 58px;
+}
+
+.redCross {
+  position: relative;
+}
+
+.redCross::before {
+  content: '❌';
   color: red;
   font-size: 28px;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+  z-index: 1;
+}
+
+.redCross span {
+  position: relative;
+  z-index: 0;
 }
