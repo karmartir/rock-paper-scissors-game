@@ -56,8 +56,6 @@ const Game = () => {
                     <div>
                         {result !== "It's a tie!" ?
                         <div>
-                            {/*{winnerTool && <span  className='span'>{winnerTool}</span>}
-                            {loserTool && <span className='span2 redCross'>{loserTool}</span>}*/}
                             {winnerTool && winnerTool === userChoice ?
                                 <div>
                                     {winnerTool && <span  className='span'>{winnerTool}</span>}
