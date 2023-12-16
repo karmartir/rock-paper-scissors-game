@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const choices = ['🪨', '🧻', '🔪'];
+const choices = ['🗿', '🧻', '🔪'];
 
 const Game = () => {
     const [userChoice, setUserChoice] = useState(null);
@@ -20,8 +20,8 @@ const Game = () => {
         if (user === computer) {
             setResult("It's a tie!");
         } else if (
-            (user === '🪨' && computer === '🔪') ||
-            (user === '🧻' && computer === '🪨') ||
+            (user === '🗿' && computer === '🔪') ||
+            (user === '🧻' && computer === '🗿') ||
             (user === '🔪' && computer === '🧻')
         ) {
             setResult('You win!');
